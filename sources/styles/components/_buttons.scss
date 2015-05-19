@@ -1,0 +1,51 @@
+.btn {
+    background: url(../images/btn-shadow.png) no-repeat center top #f5a416;
+    border: 1px solid #720008;
+    color: #720008;
+    cursor: pointer;
+    display: block;
+    font-family: $font-italic;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 150ms ease;
+    &:hover, &.active {
+        background-color: #e06422;
+        color: white;
+    }
+    &.active {
+        height: 60px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 18px;
+        background: url(../images/btn-shadow-bottom.png) no-repeat;
+        bottom: -18px;
+        left: 0;
+    }
+}
+
+.mood-nav-btn {
+    height: 44px;
+    width: 199px;
+}
+
+.prices-btn {
+    line-height: 44px;
+    padding: 0 20px;
+    font-family: Dosis;
+    text-decoration: none;
+    .sup {
+        position: relative;
+        font-size: 16px;
+        top: -6px;
+        left: 5px;
+    }
+    .price-value {
+        font-family: $font-italic;
+    }
+}

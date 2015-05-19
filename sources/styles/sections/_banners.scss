@@ -1,0 +1,41 @@
+.banners {
+	width: 990px;
+	height: 430px;
+	overflow: hidden;
+	margin: 80px auto;
+	.col {
+		float: left;
+		width: 306px;
+		margin: 0 4px;
+        opacity: 0;
+		&.middle {
+			font-size: 0;
+			.banner-link {
+				display: inline-block;
+				width: 50%;
+				overflow: hidden;
+				box-sizing: border-box;
+				&:first-child {
+					border-right: 0;
+				}
+				&:last-child {
+					border-left: 0;
+					img {
+						margin-left: -153px;
+					}
+				}
+			}
+		}
+	}
+	.banner {
+		float: left;
+		margin-bottom: 8px;
+		img {
+			display: block;
+		}
+	}
+	.banner-link {
+		display: block;
+		border: 1px solid black;
+	}
+}

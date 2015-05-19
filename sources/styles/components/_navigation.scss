@@ -1,0 +1,25 @@
+.nav {
+    background: url('../images/nav-shadow.png') no-repeat center top;
+	text-align: center;
+    padding: 0 0 0;
+    @include clearfix;
+
+    .nav-item {
+        display: inline-block;
+        margin: 0 10px;
+        zoom: 1;
+    }
+    .nav-wrapper {
+    	position: relative;
+    	left: 50%;
+    	margin-left: -438px;
+    	float: left;
+    	@include clearfix;
+    	li {
+    		float: left;
+    	}
+    }
+}
+.mood-nav{
+    opacity: 0;
+}

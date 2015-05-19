@@ -1,0 +1,117 @@
+.owl-carousel {
+	.owl-stage-outer {
+		padding-left: 14px;
+	}
+}
+.moods {
+	margin-top: 80px;
+	height: 408px;
+	position: relative;
+	&.hide {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.mood {
+	text-align: center;
+	font-size: 0;
+}
+
+.mood-image {
+	&:after {
+		display: none !important;
+	}
+}
+
+.look {
+	width: 360px;
+	border-radius: 5px;
+	background: white;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+	text-align: center;
+	cursor: pointer;
+	height: 408px;
+	&:hover {
+		&:after {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	&:after {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 150ms ease;
+		width: 240px;
+		font-family: $font-italic;
+		content: 'ver look';
+		background: #db2247;
+		color: white;
+		display: block;
+		position: absolute;
+		line-height: 50px;
+		left: 50%;
+		margin-left: -120px;
+		margin-top: -50px;
+		top: 50%;
+		font-size: 24px;
+	}
+	img {
+		display: block;
+		width: 100%;
+		border-radius: 3px;
+		line-height: 50px;
+	}
+	&.mood-image-1 {
+		transform: rotateZ(-6deg) translateY(100px);
+        opacity: 0;
+		z-index: 2;
+		cursor: url(../images/cursor-female.png) 38 26, auto;
+	}
+	&.mood-image-2 {
+		transform: rotateZ(2deg) translateY(-100px);
+        opacity: 0;
+		z-index: 1;
+		cursor: url(../images/cursor-male.png) 38 26, auto;
+	}
+	.look-description {
+		font-family: "Dancing Script", cursive;
+		font-size: 24px;
+		display: inline-block;
+		margin: 20px 0 0;
+		color: #cd0f37;
+	}
+}
+
+.mood-info {
+	position: absolute;
+    opacity: 0;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+	text-align: center;
+	pointer-events: none;
+	.mood-icon {
+        opacity: 0;
+		width: 140px;
+		height: 140px;
+		background: #d0222e;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	.mood-name {
+        opacity: 0;
+		background: #f4af42;
+		font-size: 24px;
+		color: #d0222e;
+		font-family: Dosis;
+		font-weight: 600;
+		font-weight: bold;
+		padding: 10px 60px;
+		text-transform: uppercase;
+	}
+}
