@@ -1,0 +1,64 @@
+.legend {
+	position: fixed;
+	right: 40px;
+	top: 40px;
+	li {
+		margin: 5px 0;
+	}
+	.box {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		float: none;
+		margin: 0;
+		position: relative;
+		top: 10px;
+		border-radius: 3px;
+	}
+}
+
+.row {
+	clear: both;
+	@include clearfix();
+	float: left;
+}
+
+.box {
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 10px;
+	float: left;
+}
+
+.grid {
+	@include clearfix();
+	position: relative;
+	float: left;
+	left: 50%;
+	margin-top: 120px;
+	transform: translateX(-50%);
+}
+
+button {
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	background: #C6D5AE;
+	border: 0;
+	cursor: pointer;
+	font-size: 34px;
+	color: white;
+	position: absolute;
+	&.add-col {
+		left: 100%;
+		top: 10px;
+		margin-left: 10px;
+	}
+	&.add-row {
+		bottom: 100%;
+		left: 10px;
+		margin-bottom: 10px;
+	}
+}

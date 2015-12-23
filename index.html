@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>MAKER.ME - Level Editor</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script type="text/javascript" src="public/scripts/vendor.js"></script>
+		<link rel="stylesheet" href="public/styles/main.css">
+	</head>
+
+	<body ng-controller="mainController">
+		<ul class="legend">
+			<li ng-repeat="item in legend">
+				<div class="box" ng-style="{ 'backgroundColor' : item.color }"></div>
+				{{ item.title }}
+			</li>
+		</ul>
+
+		<div class="grid">
+			<div class="row" ng-repeat="row in grid" ng-init="rowIndex = $index">
+				<div class="box" ng-repeat="box in row track by $index" ng-style="{ 'backgroundColor' : getBoxBackgroundColor(box) }" ng-click="changeBox(rowIndex, $index)"></div>
+			</div>
+
+			<button class="add-col" ng-click="addCol()">+</button>
+			<button class="add-row" ng-click="addRow()">+</button>
+		</div>
+
+		<script type="text/javascript" src="public/scripts/all.js"></script>
+	</body>
+</html>
