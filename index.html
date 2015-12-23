@@ -20,8 +20,8 @@
 		</ul>
 
 		<div class="grid">
-			<div class="row" ng-repeat="row in grid" ng-init="rowIndex = $index">
-				<div class="box" ng-repeat="box in row track by $index" ng-style="{ 'backgroundColor' : getBoxBackgroundColor(box) }" ng-click="changeBox(rowIndex, $index)"></div>
+			<div class="row" ng-repeat="row in grid">
+				<div class="box" ng-repeat="box in row track by $index" ng-style="{ 'backgroundColor' : getBoxBackgroundColor(box) }" ng-click="changeBox($parent.$index, $index)"></div>
 			</div>
 
 			<button class="add-col" ng-click="addCol()">+</button>
