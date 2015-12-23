@@ -2,7 +2,7 @@ var app = angular.module('app', []);
 
 app.controller('mainController', function($scope, $http) {
 	$scope.legend = [
-		{ title: 'Standart', code: 0, color: '#796464', default: true },
+		{ title: 'Standard', code: 0, color: '#796464', default: true },
 		{ title: 'Player', code: 1, color: '#FB6860', default: false },
 		{ title: 'Enemy', code: 2, color: '#C80045', default: false },
 		{ title: 'Hole', code: 3, color: '#C6D5AE', default: false }
