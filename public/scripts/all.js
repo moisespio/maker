@@ -2,16 +2,14 @@ var app = angular.module('app', []);
 
 app.controller('mainController', function($scope, $http) {
 	$scope.legend = [
-		{ title: 'Player', code: 0, color: '#FB6860', default: true },
-		{ title: 'Enemy', code: 1, color: '#C80045', default: false },
-		{ title: 'Hole', code: 2, color: '#C6D5AE', default: false }
+		{ title: 'Standart', code: 0, color: '#796464', default: true },
+		{ title: 'Player', code: 1, color: '#FB6860', default: false },
+		{ title: 'Enemy', code: 2, color: '#C80045', default: false },
+		{ title: 'Hole', code: 3, color: '#C6D5AE', default: false }
 	];
 
 	$scope.grid = [
-		[0, 0, 0, 1],
-		[0, 0, 0, 1],
-		[0, 0, 0, 1],
-		[0, 0, 0, 1]
+		[0]
 	];
 
 	$scope.getBoxBackgroundColor = function (code) {

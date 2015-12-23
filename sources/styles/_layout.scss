@@ -24,11 +24,11 @@
 }
 
 .box {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 4px;
 	cursor: pointer;
-	margin: 10px;
+	margin: 5px;
 	float: left;
 }
 
@@ -42,8 +42,8 @@
 }
 
 button {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 4px;
 	background: #C6D5AE;
 	border: 0;
@@ -53,12 +53,12 @@ button {
 	position: absolute;
 	&.add-col {
 		left: 100%;
-		top: 10px;
-		margin-left: 10px;
+		top: 5px;
+		margin-left: 5px;
 	}
 	&.add-row {
 		bottom: 100%;
-		left: 10px;
-		margin-bottom: 10px;
+		left: 5px;
+		margin-bottom: 5px;
 	}
 }
