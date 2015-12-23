@@ -1,31 +1,6 @@
-// @include font-face('bodoni_btitalic', 'bodoni-bt-italic-webfont', 'bodoni_btitalic', 'serif');
+@include font-face('Brandon Grotesque', 'brandon_blk', 'brandon-grotesque', 'sans-serif');
+@include font-face('Hack', 'hack-regular-webfont', 'hack', 'monospace');
 
 body {
-    color: #000;
-    font-family: $default_font;
-    font-size: $default_font_size;
-}
-
-h1 {
-    font-size: em(28px);
-}
-
-h2 {
-    font-size: em(22px);
-}
-
-h3 {
-    font-size: em(18px);
-}
-
-h4 {
-    font-size: em(16px);
-}
-
-h5 {
-    font-size: em(14px);
-}
-
-h6 {
-    font-size: em(12px);
+	font-family: 'Hack';
 }
